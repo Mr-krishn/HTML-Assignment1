@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluation1</title>
+    <style type="text/css">
+        .grandfather {
+            display: flex;
+            border: 1px dotted black;
+            height: 800px;
+            width: 1000px;
+        }
+
+        .father,
+        .uncle {
+            height: 700px;
+            width: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .person1 {
+            width: fit-content;
+            height: 600px;
+            margin-top: 15px;
+            margin-left: 40px;
+        }
+
+        .child-1,
+        .child-2,
+        .child-3 {
+            width: 60px;
+            height: 500px;
+            margin-right: 25px;
+            margin-top: 15px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .box {
+            width: 30px;
+            height: 30px;
+            border: 1px dotted black;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .border {
+            border: 1px dotted black;
+        }
+
+        .person1 {
+            display: flex;
+        }
+
+        .uncle {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            height: 700px;
+        }
+
+        .person-1 {
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .person-2 {
+            height: 500px;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .child1,
+        .child3 {
+            height: 20px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .child2 {
+            height: 300px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .person-3 {
+            margin-bottom: 10px;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandfather border"> Grandfather
+        <div class="father border">Father
+            <div class="person1 border">person 1
+                <div class="child-1 border">child-1</div>
+                <div class="child-2 border">child-2</div>
+                <div class="child-3 border">child-3
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="uncle border">Uncle
+            <div class="person-1 border">Person-1</div>
+            <div class="person-2 border">Person-2
+                <div class="child1 border">child-1</div>
+                <div class="child2 border">child-2
+                    <div class="child1 border orange">1</div>
+                    <div class="child1 border">2</div>
+                    <div class="child1 border green">3</div>
+                </div>
+                <div class="child3 border">child-3</div>
+            </div>
+            <div class="person-3 border">person-3</div>
+        </div>
+    </div>
+</body>
+</html>
