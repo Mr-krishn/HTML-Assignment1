@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai | Layout</title>
+    <style>
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: #3d415c;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        .nav div:nth-child(1) {
+            color: black;
+            font-weight: 700;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .head {
+            color: red;
+        }
+
+        #short {
+            width: 4px;
+            text-align: center;
+            height: 4px;
+            font-size: 4px;
+            border: 0.05px solid;
+            border-radius: 4px;
+            margin-left: 2px;
+            align-items: center;
+        }
+
+        .nav div:nth-child(2) {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav div:nth-child(2)>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav+h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 40px;
+            text-align: center;
+            color: rgb(215, 32, 32);
+        }
+
+        .nav~div {
+            height: 780px;
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+
+        .nav~div>img {
+            width: 30%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="head">masa<span class="head">i</span><span id="short">R</span></div>
+        <div>
+            <a href="">HOME</a>
+            <a href="">GALLERY</a>
+            <a href="">ABOUT</a>
+        </div>
+    </nav>
+    <h2>PHOTO GALLERY</h2>
+    <div>
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+    </div>
+</body>
+
+</html>
