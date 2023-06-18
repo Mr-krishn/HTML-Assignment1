@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <style>
+        * {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-weight: 900;
+            font-size: 30px;
+        }
+
+        #header>h1 {
+            font-size: 50px;
+            color: teal;
+        }
+
+        #content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+            padding: 20px;
+            box-shadow: 1px 2.5px 5px grey;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        #main-things {
+            display: grid;
+            gap: 9px;
+            padding: 5px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 100px);
+            grid-template-areas: "A A A A "
+                "B C D E"
+                "F G H I"
+                "J K L M"
+                "N O P Q";
+        }
+
+        #main-things>div {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 1px 2.5px 5px grey;
+            border-radius: 15px;
+        }
+
+        #main-things>div:nth-child(1) {
+            grid-area: A;
+            width: 380px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        #main-things>div:nth-child(2) {
+            grid-area: B;
+        }
+
+        #main-things>div:nth-child(3) {
+            grid-area: C;
+        }
+
+        #main-things>div:nth-child(4) {
+            grid-area: D;
+        }
+
+        #main-things>div:nth-child(5) {
+            grid-area: E;
+            background-color: black;
+            color: white;
+        }
+
+        #main-things>div:nth-child(6) {
+            grid-area: F;
+        }
+
+        #main-things>div:nth-child(7) {
+            grid-area: G;
+        }
+
+        #main-things>div:nth-child(8) {
+            grid-area: H;
+        }
+
+        #main-things>div:nth-child(9) {
+            grid-area: I;
+            background-color: black;
+            color: white;
+        }
+
+        #main-things>div:nth-child(10) {
+            grid-area: J;
+        }
+
+        #main-things>div:nth-child(11) {
+            grid-area: K;
+        }
+
+        #main-things>div:nth-child(12) {
+            grid-area: L;
+        }
+
+        #main-things>div:nth-child(13) {
+            grid-area: M;
+            background-color: black;
+            color: white;
+        }
+
+        #main-things>div:nth-child(14) {
+            grid-area: N;
+            background-color: red;
+            color: white;
+        }
+
+        #main-things>div:nth-child(15) {
+            grid-area: O;
+        }
+
+        #main-things>div:nth-child(16) {
+            grid-area: P;
+            background-color: black;
+            color: white;
+        }
+
+        #main-things>div:nth-child(17) {
+            grid-area: Q;
+            background-color: black;
+            color: white;
+        }
+
+        #main-things>div:hover {
+            width: 95%;
+            background-color: gold;
+            cursor: pointer;
+        }
+
+        #main-things>div:nth-child(1):hover {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Masai Calculator</h1>
+    </div>
+    <div id="content">
+        <div id="main-things">
+            <div></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>*</div>
+            <div>C</div>
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+        </div>
+    </div>
+</body>
+
+</html>
